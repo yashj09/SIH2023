@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Consultation Pricing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Legal Consultation Pricing</h1>
+        <div class="pricing-plan">
+            <div class="plan-header">
+                <h2>Legal Consultation</h2>
+                <p>Choose your consultation duration:</p>
+            </div>
+            <div class="duration-options">
+                <label>
+                    <input type="radio" name="duration" value="30" checked> 30 Minutes - $50
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="duration" value="60"> 1 Hour - $100
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="duration" value="120"> 2 Hours - $180
+                </label>
+            </div>
+            <div class="plan-details">
+                <h3>Details:</h3>
+                <ul>
+                    <li>Legal consultation with an experienced lawyer.</li>
+                    <li>Personalized advice tailored to your legal needs.</li>
+                    <li>Available via video call or phone.</li>
+                </ul>
+            </div>
+            <button id="select-plan-button">Select Plan</button>
+        </div>
+    </div>
+
+    <script>
+        // Get all radio buttons for duration
+        const durationRadios = document.querySelectorAll('input[name="duration"]');
+        const selectPlanButton = document.getElementById('select-plan-button');
+
+        // Add click event listener to the "Select Plan" button
+        selectPlanButton.addEventListener('click', function () {
+            let selectedDuration = '';
+
+            // Find the selected duration
+            durationRadios.forEach((radio) => {
+                if (radio.checked) {
+                    selectedDuration = radio.value;
+                }
+            });
+
+            // Display a confirmation message with the selected duration
+            if (selectedDuration) {
+                alert(`You have selected ${selectedDuration} minutes consultation.`);
+            } else {
+                alert('Please select a consultation duration.');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+
+<style >
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+
+.log{
+  color: white;
+  padding: 5px 10px;
+}
+.log:hover{
+  color: rgba(255, 255, 255, 0.653);
+}
+.card{
+    
+    border:none;
+}
+
+.user-content p{
+    margin-top:5px;
+    font-size:12px;
+}
+
+
+.ratings i{
+    color:blue;
+}
+</style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" >
+        <img src="image/logo.png" alt="Logo" style="width:40px;" class="rounded-pill">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        
+          <a class="nav-link" href="javascript:void(0)" class="text-primary">HOME</a>
+          <a class="nav-link" href="../Internship/index.html" class="text-primary">INTERNSHIP</a>
+
+        <li class="nav-item dropdown" class="d-flex justify-content-end">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" class="rounded ">FIND</a>
+      <ul class="dropdown-menu" class="class="dropdown-menu-right>
+        <li><a class="dropdown-item" href="../lawyer section/index.html">Legal Consultation </a></li>
+        <li><a class="dropdown-item" href="#">Document Drafts</a></li>
+        <li><a class="dropdown-item" href="#">Mediation   Services</a></li>
+        <li><a class="dropdown-item" href="#">Arbitration</a></li>
+        <li><a class="dropdown-item" href="#">Notary Services</a></li>
+      </ul>
+      
+    <li class="nav-item dropdown" class="d-flex justify-content-end">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">BROWSE PROVIDERS</a>
+      <ul class="dropdown-menu" class="class="dropdown-menu-right>
+        <li><a class="dropdown-item" href="../lawyers_Profile/HTML/index.html">Advocates</a></li>
+        <li><a class="dropdown-item" href="#">Arbitrators</a></li>
+        <li><a class="dropdown-item" href="#">Mediators</a></li>
+        <li><a class="dropdown-item" href="#">Notaries</a></li>
+        <li><a class="dropdown-item" href="#">Documents Writers</a></li>
+        
+
+      </ul>
+     
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a class="log" href="../Login&RegistrationPage/HTML/register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a class="log" href="../Login&RegistrationPage/HTML/login01.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div id="carouselExampleInterval" class="carousel slide" data-mdb-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-mdb-interval="10000">
+      <img src="image/c1.png" class="d-block w-100" alt="Wild Landscape"/>
+    </div>
+    <div class="carousel-item" data-mdb-interval="2000">
+      <img src="image/c2.png" class="d-block w-100" alt="Camera"/>
+    </div>
+    <div class="carousel-item">
+      <img src="image/c3.png" class="d-block w-100" alt="Exotic Fruits"/>
+    </div>
+  </div>
+  <button class="carousel-control-prev" data-mdb-target="#carouselExampleInterval" type="button" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" data-mdb-target="#carouselExampleInterval" type="button" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div style="text-align: center;background-color: #1369ce;height: 60px ;">
+    <Select name="Categories" style="font-size: 18px;border-color: #1369ce;margin-top: 15px;">
+      <option value="Categories">Categories</option>
+      <option value="Criminal lawyer">Criminal lawyer</option>
+      <option value="Family lawyer">Family lawyer</option>
+      <option value="Corporate lawyer">Corporate lawyer</option>
+      <option value="Property lawyer">Property lawyer</option>
+    </Select>
+     <input placeholder="Enter City" style="font-size: 18px;border-color: #1369ce;margin-top: 15px;">
+     <a style="padding-left:50px;padding-right: 50px; font-size: 20px;border-color: #1369ce ;margin-top: 15px;">City</a>
+     <button style="font-size: 20px;margin-top: 15px; border:2px black solid ; background-color: white;">Search</button>
+
+    </div>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="image/a1.png">
+        </div>
+        <div class="team-content">
+          <a href="https://en.wikipedia.org/wiki/Ashok_Desai">
+          <h3 class="name">Ashok desai</h3>
+          </a>
+          <h3>Attorney General</h3>
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="image/a2.png">
+        </div>
+        <div class="team-content">
+          <a href="https://en.wikipedia.org/wiki/Fali_Sam_Nariman">
+          <h3 class="name">Fali Nariman</h3>
+          </a>
+          <h3>international arbitration</h3>
+          
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="image/a3.png">
+        </div>
+        <div class="team-content">
+          <a href="https://en.wikipedia.org/wiki/Ram_Jethmalani">
+          <h3 class="name">Ram Jethmalani</h3>
+          </a>
+          <h3>Criminal Lawers</h3>
+        
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="image/a4.png">
+        </div>
+        <div class="team-content">
+          <a href="https://en.wikipedia.org/wiki/K._K._Venugopal">
+          <h3 class="name" >K venue </h3>
+          </a>
+          <h3>Attorney General</h3>
+          
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-3">
+  <h3>About Us</h3>
+  <p>Welcome user, a place where we are dedicated to  providing exceptional legal assistance tailored to meet your unique  needs. Our team of experienced and highly skilled attorneys is committed  to delivering expert guidance and support across various areas of law,  ensuring you receive the best possible legal solutions. With a steadfast  commitment to transparency, professionalism, and client satisfaction,  we strive to build lasting relationships founded on trust and integrity.  At this place we embrace the values of legal  excellence, ethical practice, and community engagement, aiming to not  only offer top-tier legal services but also make a positive difference  in the lives of our clients and the communities we serve</p>
+  
+  
+</div>
+<hr>
+
+
+<div class="container mt-5 mb-5">
+    
+    <div class="row g-2">
+        <div class="col-md-4">
+            <div class="card p-3 text-center px-4">
+                
+                <div class="user-image">
+                    
+            <img src="image/cl3.png" class="rounded-circle" width="80"
+                    >
+                    
+                </div>
+                
+                <div class="user-content">
+                    
+                    <h5 class="mb-0">Aditya Dawas</h5>
+                    <span>Excutive Manager</span>
+                    <p> I recently wanted to make one of my document in sudden this site helped me a lot ,they provide my services in given time and respond my questions and concerns very politely.Their knowledge of estate law is impressive, and I wholeheartedly recommend their services to anyone seeking legal services</p>
+                    
+                </div>
+                
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            
+            <div class="card p-3 text-center px-4">
+                
+                <div class="user-image">
+                    
+            <img src="image/cl1.png" class="rounded-circle" width="80"
+                    >
+                    
+                </div>
+                
+                <div class="user-content">
+                    
+                    <h5 class="mb-0">Rohan Gupta</h5>
+                    <span>HR Manager</span>
+                    <p>I can't express how grateful I am for the legal expertise and support I received from this site ,this site is very user friendly and it saves a lot of time  I highly recommend their services to anyone in need of legal services..</p>
+                    
+                </div>
+                
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="col-md-4">
+            
+            <div class="card p-3 text-center px-4">
+                
+                <div class="user-image">
+                    
+            <img src="image/cl2.png" class="rounded-circle" width="80"
+                    >
+                    
+                </div>
+                
+                <div class="user-content">
+                    
+                    <h5 class="mb-0">Karan Singh</h5>
+                    <span>Hotel Management</span>
+                    <p>Dealing with a personal injury case was overwhelming, but this site helped me a lot and their services are so much affordable and  much smoother. They were always quick to respond to my questions and concerns, providing me with clear and concise explanations of the legal aspects within given time .</p>
+                    
+                </div>
+
+
+                <hr>
+                
+                <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    
+</div>
+<hr>
+
+<section class="bg-white dark:bg-gray-900">
+    <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Why Choose Us ?</h2>
+            <p class="mb-4">Here at our user friendly platform, we are distinguished by our unwavering commitment to understanding your unique legal issues and creating personalized solutions that are in your best interest. Our network's extensive talent in various fields helps us maintain efficiency. We prioritize open communication, keep clients data confidential and adding to it we keep them informed at every step of the litigation process and ensure that you are actively involved in. Your success and satisfaction motivates us and we strive tirelessly to achieve the best results for you. With us, you are not just a customer instead you are a valuable partner in the pursuit of justice and resolution.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <img class="w-full rounded-lg" src="image/wc1.png" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="image/wc2.png" alt="office content 2">
+        </div>
+    </div>
+</section>
+
+<hr>
+
+
+<footer class="relative bg-blueGray-200 pt-8 pb-6">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap text-left lg:text-left">
+      <div class="w-full lg:w-6/12 px-4">
+        <h4 class="text-3xl fonat-semibold text-blueGray-700">You can also contact us on!</h4>
+        <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+          we reply soon .
+        </h5>
+        <div class="mt-6 lg:mb-0 mb-6">
+          <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+            <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+          
+            <i class="fab fa-youtube"></i>
+          </button>
+        </div>
+      </div>
+      <div class="w-full lg:w-6/12 px-4">
+        <div class="flex flex-wrap items-top mb-6">
+          <div class="w-full lg:w-4/12 px-4 ml-auto">
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+            <ul class="list-unstyled">
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">About Us</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Blog</a>
+              </li>
+              
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Lawers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-4/12 px-4">
+           <a href="../Pricing/index.html"> <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Pricing</span></a>
+            <ul class="list-unstyled">
+            
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Terms &amp; Conditions</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 border-blueGray-300">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-blueGray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">2023</span><a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank"> Lawers
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+</html>
+
+

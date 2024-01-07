@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.page {
+    margin: 20px 2px;
+}
+
+.bor{
+
+    margin: 0px 150px;
+    border-radius: 5px;
+    padding-top: 10px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 17px;
+    position: absolute;
+    left: 230px;
+    top: 10px;
+   
+}
+.right{
+    width: fit-content;
+    position: absolute;
+    padding: 10px 20px;
+    top:33px;
+   right: 20px;
+}
+.rig{
+    padding: 5px 5px;
+    margin: 2px 2px;
+    line-height: 10px;
+}
+.rig img{
+    margin: 0px 3px;
+    vertical-align: middle;
+}
+.lname{
+    font-size: 32px;
+    font-weight: 300;
+    position: relative;
+    left: -13px;
+}
+/* .header img{
+    position: relative;
+    left: -62px;
+    top: -13px;
+} */
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 100px auto;
+}
+
+.lawyerinfo {
+    display: inline;
+    position: relative;
+    left: -60px;
+    top: -15px;
+   padding: 5px 5px ;
+}
+
+.profile img {
+    width: 180px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    border-radius: 15px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 240px;
+    top: -235px;
+}
+.rating{
+    position: relative;
+    left: 5px;
+    top: -22px;
+    font-weight: 500;
+    margin-left: 5px;
+}
+#more{
+    position: absolute;
+    top: 40px;
+    
+}
+
+#more .free{
+    color: #52a304;
+    background: rgba(82,162,4,.1);
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 16px;
+    margin-right: 5px;
+    
+}
+
+#more .virtual{
+    color: #00b7af;
+    background: #e5f8f7;
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 16px;
+}
+#more img{
+    vertical-align: top;
+}
+  
+.cbtn {
+    background-color: #ff5500;
+    color: white;
+    padding: 15px 46px;
+    font-size: 15px;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px 35px;
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+    transition: all ease 0.2s;
+}
+
+.cbtn:hover {
+    color: black;
+     background-color:#ff5500d4; 
+}
+
+.cbtn:active {
+    scale: 0.9;
+}
+
+.mbtn {
+    background-color: rgb(49, 207, 31);
+    color: white;
+    padding: 15px 80px;
+    font-size: 15px;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px 0px;
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+    transition: all ease 0.2s;
+}
+
+.mbtn:hover {
+    color: black;
+    background-color: rgba(49, 207, 31, 0.815);
+}
+
+.mbtn:active {
+    scale: 0.9;
+}
+.pbtn{
+    background-color: rgb(45, 87, 147);
+    color: white;
+    padding: 15px 80px;
+    font-size: 15px;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px 0px;
+    position: relative;
+    bottom: 40px;
+    left: 80px;
+    transition: all ease 0.2s;
+}
+.pbtn:hover{
+    color: black;
+    background-color: rgba(45, 87, 147, 0.868);
+}
+.pbtn:active{
+    scale: 0.9;
+}
+.pbtn a{
+    color: white;
+    text-decoration: none;
+}
+.nav ul{
+   display: flex;
+ list-style: none;
+ gap: 30px;
+ font-size: 18px;
+
+}
+
+.nav li a{
+font-weight: 100;
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+   
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 145px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+

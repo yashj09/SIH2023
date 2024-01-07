@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/register.css">
+    <title>Create a New Account</title>
+</head>
+<body>
+    <div class="create-account-container">
+        <h1>Create a New Account</h1>
+        <form action="process_registration.php" method="POST">
+            <label for="registration_type">Registration As:</label>
+            <select id="registration_type" name="registration_type">
+                <option value="individual">Individual</option>
+                <option value="professional">Professional</option>
+            </select>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="login01.html">Login here</a></p>
+    </div>
+</body>
+</html>

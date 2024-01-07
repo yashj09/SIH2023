@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Providers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-form">
+            <h3>SEARCH</h3>
+            <form method="get" id="filterForm">
+                <div class="filter-box">
+                    <select name="city" class="location-select" id="location">
+                        <option value="">Select City</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="pune">Pune</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="lucknow">Lucknow</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="bhopal">Bhopal</option>
+                        <option value="patna">Patna</option>
+                        <option value="indore">Indore</option>
+                        <option value="coimbatore">Coimbatore</option>
+                        
+                    </select>
+                    <br><br>
+                    
+                    <select id="practice" name="practice" class="practice-select">
+                            <option value="">Practice Area</option>
+                            <option value="familyLaw">Family Law</option>
+                            <option value="criminalLaw">Criminal Law</option>
+                            <option value="employmentLaw">Employment Law</option>
+                            <option value="propertyLaw">Property Law</option>
+                            <option value="personalInjury">Personal Injury</option>
+                            <option value="divorce">Divorce</option>
+                            <option value="realEstate">Real Estate</option>
+                            <option value="immigration">Immigration</option>
+                            <option value="businessLaw">Business Law</option>
+                            <option value="intellectualProperty">Intellectual Property</option>
+                       
+                        </select>
+                        
+                    </select>
+                    <br><br>
+                    
+                    <select name="court" class="court-select" id="court">
+                        <option value="">Court</option>
+                        <option value="supremeCourt">Supreme Court</option>
+                        <option value="highCourt">High Court</option>
+                        <option value="districtCourt">District Court</option>
+                        <option value="civilCourt">Civil Court</option>
+                    
+                    </select>
+                    <br><br>
+                    
+                    <select name="experience" id="experience" class="experience-select">
+                        <option value="">Experience</option>
+                        <option value="5">&lt; 5 Years</option>
+                        <option value="510">5-10 Years</option>
+                        <option value="1015">10-15 Years</option>
+                        <option value="15">&gt; 15 Years</option>
+                    </select><br>
+                    
+                    <select name="gender" id="gender" class="gender-select">
+                        <option value="">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="female">Other</option>
+                    </select><br>
+                    
+                    <select name="ratings" id="ratings" class="ratings-select">
+                        <option value="">Ratings</option>
+                        <option value="5">5 ratings</option>
+                        <option value="4">&gt;4 ratings</option>
+                        <option value="3">&gt; 3 ratings</option>
+                    </select>
+                    <br>
+                    
+                    <select name="sortBy" class="sort-select">
+                        <option value="act" selected="">By Activity</option>
+                        <option value="exp">By Experience</option>
+                        <option value="alp">By Alphabetically</option>
+                    </select>
+                </div>
+                <div class="cta">
+                    <button type="submit" class="filter-button">FILTER </button>
+                </div>
+                <div class="cta">
+                    <button type="button" class="reset-button" > RESET</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Lawyer Profile</h1>
+        <div class="lawyer-profile">
+            <img src="lawyer-image.jpg" alt="Lawyer Image">
+            <h2>John Doe</h2>
+            <p>Practice Areas: Criminal Law, Family Law</p>
+            <p>Experience: 10 Years</p>
+            <p>Location: Delhi, India</p>
+            <p>Education: LLB from XYZ Law School</p>
+            <p>License Number: 123456</p>
+            <p>Ratings: 4.5 (123 reviews)</p>
+            <button>Contact Lawyer</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

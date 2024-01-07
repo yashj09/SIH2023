@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Internship Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Internship Portal</h1>
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <section class="inter">
+            <h2>Internship Listings</h2>
+            <div class="card">
+                <img src="l1.jpg" alt="">
+                <h3>Harish Salve</h3>
+                <p>Specialization: Criminal Law</p>
+                <p>Location: Delhi</p>
+                <button class="apply-button">Apply</button>
+                <div id="paragraph">
+
+                    <p class="para">&#x1F554;Duration: 3 months</p>
+                    <p class="para">&#x1F4D8;Requirements: Law student in final year</p>
+                    <p class="para">&#x2714; Benefits: Mentorship and hands-on experience</p>
+                    <p class="para">&#128197;Application Deadline: October 15, 2023</p>
+                    <p class="para">&#x260E;Contact: harish.salve@email.com</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="l3.png" alt="">
+                <h3>Ram Jethmalani</h3>
+                <p>Specialization: Corporate Law</p>
+                <p>Location: Mumbai</p>
+                <button class="apply-button">Apply</button>
+                <div id="paragraph">
+                    <p class="para">&#x1F554; Duration: 6 months</p>
+                    <p class="para">&#x1F4D8; Requirements: Law graduate</p>
+                    <p class="para">&#x2714; Benefits: Exposure to high-profile cases</p>
+                    <p class="para">&#128197; Application Deadline: November 30, 2023</p>
+                    <p class="para">&#x260E; Contact: ram.jethmalani@email.com</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="l4.jpg" alt="">
+                <h3>Indira Jaising</h3>
+                <p>Specialization: Family Law</p>
+                <p>Location: Bangalore</p>
+                <button class="apply-button">Apply</button>
+                <div id="paragraph">
+                    <p class="para">&#x1F554; Duration: 4 months</p>
+                    <p class="para">&#x1F4D8; Requirements: Law student in any year</p>
+                    <p class="para">&#x2714; Benefits: Legal research opportunities</p>
+                    <p class="para">&#128197; Application Deadline: December 10, 2023</p>
+                    <p class="para">&#x260E; Contact: indira.jaising@email.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Apply for an Internship</h2>
+            <form id="application-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Cover Letter:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="apply-button">Submit Application</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign in to LegalEase</title>
+</head>
+<link rel="stylesheet" href="../CSS/login01.css">
+<body>
+  <div class="container">
+    <form action="login.php" method="post">
+      <h1>Sign in to LegalEase</h1>
+      <label for="registration_type">Registration As:</label>
+      <select id="registration_type" name="registration_type">
+          <option value="individual">Individual</option>
+          <option value="professional">Professional</option>
+      </select>
+      
+      <label for="email">Email or phone</label>
+      <input type="text" id="email" name="email" placeholder="Enter email or phone" required>
+      <label for="password">Password</label>
+      <div class="forgot-password">
+        <a href="forgot_password.html">Forgot Password?</a>
+    </div>
+    
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
+    
+      <button type="submit">Sign in</button>
+      <p>New to LegalEase? <a href="register.html">Create an account</a></p>
+    </form>
+  </div>
+</body>
+</html>

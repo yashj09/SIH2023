@@ -1,0 +1,66 @@
+.container {
+    width: 400px;
+    margin: 150px auto;
+    
+  }
+  
+  form {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    height: 400px;
+    background-color: white;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 3px 0px;
+  }
+  select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 3px 0px;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(235, 145, 78);
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  a {
+    color:rgb(0, 158, 255);
+  }
+  .forgot-password{
+    position: relative;
+
+  margin: -8px 120px;
+  left: 124px;
+  bottom: 10px;
+ 
+}
+  
